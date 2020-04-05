@@ -5,16 +5,25 @@
     <title>"Test"</title>
     </head>
     <body>
-        <h2>The form target attribute</h2>
-
-<p>When submitting this form, the result will be opened in a new browser tab:</p>
-
-<form action="/action_page.php" target="_blank">
-  <label for="choice">Choice:</label><br>
-  <input type="text" id="choice" name="choice" value=""><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
+        
+<form
+  action="https://formspree.io/FORM_ID"
+  method="POST"
+>
+  <label>
+    Your Name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Your Email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  <input type="submit" value="Send">
+</form>
 
     </body>
 </html>
