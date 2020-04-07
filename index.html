@@ -125,6 +125,9 @@
               from {opacity: .4} 
               to {opacity: 1}
             }
+            img {
+              overflow: auto;   
+            }
         </style>
     </head>
     <body>
@@ -141,19 +144,19 @@
               <!-- Full-width images with number and caption text -->
               <div class="mySlides fade">
                   <div class="numbertext">1 / 3</div>
-                <img src="https://www.wowamazing.com/wp-content/uploads/2015/08/13-of-the-Most-Amazing-and-Most-Delicious-Ice-Creams-...Yummy_.jpg" height=200px alt="rainbow-coloured ice cream">
+                <img src="https://www.wowamazing.com/wp-content/uploads/2015/08/13-of-the-Most-Amazing-and-Most-Delicious-Ice-Creams-...Yummy_.jpg" width=100% alt="rainbow-coloured ice cream">
                 <div class="text">Delicious rainbow ice cream</div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/da/2b/3f/scoop-of-unicorn-icecream.jpg" height=200px alt="more delicious ice cream">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/da/2b/3f/scoop-of-unicorn-icecream.jpg" width=100% alt="more delicious ice cream">
                 <div class="text">Wow! Such mouth-watering ice cream!</div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="https://live.staticflickr.com/6158/6170039945_57f5a35abb_b.jpg" height=200px alt="ice cream that looks like a duck">
+                <img src="https://live.staticflickr.com/6158/6170039945_57f5a35abb_b.jpg" width=100% alt="ice cream that looks like a duck">
                 <div class="text">Interesting and creative duck head ice cream! Looks so delicious!</div>
               </div>
             
@@ -199,6 +202,9 @@
                   slides[slideIndex-1].style.display = "block"; 
                   dots[slideIndex-1].className += " active";
                 }
+            </script>
+            <script>
+               
             </script>
     </body>
 </html>
