@@ -36,7 +36,7 @@
                 text-align: center;
             }
             
-            div.video-container iframe {
+            div.video-container.once iframe {
             	margin: 0;
             	width: 100%;
                 height: 500px;
@@ -44,15 +44,27 @@
             }
             
             @media screen and (min-width: 1000px) {
-                div.video-container iframe {
+                div.video-container.once iframe {
                     margin: 0;
                     width: 1000px;
                     height: 809px;
                     
                 }
+                div.video-container.twice iframe {
+                    margin: 0;
+                    width: 966px;
+                    height: 543px; 
+                    
+                }
             }
             @media screen and (min-width: 425) and (max-width: 600) {
-                div.video-container iframe {
+                div.video-container.once iframe {
+                    margin: 0;
+                    width: 425px;
+                    height: 344px;
+
+                }
+                div.video-container.twice iframe {
                     margin: 0;
                     width: 425px;
                     height: 344px;
@@ -73,9 +85,12 @@
        <header>
         <h1>Test for embedding YouTube videos into webpages:</h1>
       </header>
-      <div class="video-container">
+      <div class="video-container first">
         <iframe src="https://www.youtube.com/embed/VDQ1LHMxQBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen</iframe>
           
+      </div>
+      <div class="video-container twice">
+        <iframe src="https://www.youtube.com/embed/8uYnqYPQv2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </body>
 </html>
