@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mc please page two</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            #header {
+                background-color: #333;
+                overflow: hidden;
+            }
+            #header a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            
+            #header a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            
+            #header a#active {
+                background-color: green;
+                color: black;
+            }
+            
+            div.video-container {
+                text-align: center;
+            }
+            
+            div.video-container.once iframe {
+            	margin: 0;
+            	width: 100%;
+                height: 500px;
+            	min-height: 344px;
+            }
+            div.video-container.twice iframe {
+            	margin: 0;
+            	width: 100%;
+                height: 500px;
+            	min-height: 344px;
+            }
+            
+            @media screen and (min-width: 1000px) {
+                div.video-container.once iframe {
+                    margin: 0;
+                    width: 1000px;
+                    height: 809px;
+                    
+                }
+                div.video-container.twice iframe {
+                    margin: 0;
+                    width: 966px;
+                    height: 543px; 
+                    
+                }
+            }
+            @media screen and (min-width: 425px) and (max-width: 600px) {
+                div.video-container.once iframe {
+                    margin: 0;
+                    width: 425px;
+                    height: 344px;
+
+                }
+                div.video-container.twice iframe {
+                    margin: 0;
+                    width: 425px;
+                    height: 344px;
+
+                }
+            }
+            
+            /*<iframe width="425" height="344" src="https://www.youtube.com/embed/VDQ1LHMxQBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>*/
+            
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="https://mcplease.github.io">Home</a>
+            <a href="https://mcplease.github.io/proposal">Proposal</a>
+            <a href="https://mcplease.github.io/music">Test</a>
+            <a href="https://mcplease.github.io/secondMusic" id="active">Test2</a>
+        </div>
+       <header>
+        <h1>Test for embedding YouTube videos into webpages:</h1>
+      </header>
+ 
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/Nl_4MWNh08I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </body>
+</html>
+
+
