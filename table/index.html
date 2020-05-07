@@ -21,6 +21,12 @@
             table tbody tr.Geography {
                 background-color: lightgreen;
             }
+            table tbody tr.Math {
+                background-color: lightgray;
+            }
+            table tbody tr.Chinese {
+                background-color: lightpink;
+            }
         </style>
     </head>
     <body>
@@ -46,60 +52,61 @@
                     </tr>
                     <tr class="Science">
                         <td>Extra Practice_Atoms, Molecules and Ions</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
                     </tr>
                     <tr class="Science">
                         <td>Extra Practice_Particulate Nature of Matter</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
                     </tr>
                     <tr class="Science">
                         <td>Extra Practice_Separation Techniques</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
                     </tr>
                     <tr class="Science">
                         <td>Extra Practice_Chemical Composition</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
                     </tr>
                     <tr class="Science">
-                        <td></td>
+                        <td>Extra Practice_Formula Writing</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Math">
+                        <td>Y1RP_WS01_Algebraic Expansion and Factorisation</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Math">
+                        <td>Y1RP_WS02_Linear and Algebraic Fractional Equations</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Chinese">
+                        <td>2020 1HCL 年中假期作业通知 1F 1I 1L</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Chinese">
+                        <td>《鹰的天空》征文（二） （中一）</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Chinese">
+                        <td>2020 1HCL 年中假期作业_《我家也是联合国》续写_Template</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Chinese">
+                        <td>1J 郭振光 我家也是联合国新故事</td>
+                        <td>End of school hols</td>
+                        <td>No</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div id="checkbox-container">
-            <div>
-                <label for="option1">Option 1</label>
-                <input type="checkbox" id="option1">
-            </div>
-            <div>
-                <label for="option2">Option 2</label>
-                <input type="checkbox" id="option2">
-            </div>
-            <div>
-                <label for="option3">Option 3</label>
-                <input type="checkbox" id="option3">
-            </div>
-            
-            <button>Check All</button>
-        </div>
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-        <script> 
-            $("#checkbox-container :checkbox").on("change", function(){
-              alert("The checkbox with the ID '" + this.id + "' changed");
-            });
-            
-            var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
-            var $checkboxes = $("#checkbox-container :checkbox");
-                
-            $checkboxes.on("change", function(){
-              $checkboxes.each(function(){
-                checkboxValues[this.id] = this.checked;
-              });
-              localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-            });
-            var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues');
-            if (checkboxValues === null){
-              checkboxValues = {};
-            }
-            $.each(checkboxValues, function(key, value) {
-                $("#" + key).prop('checked', value);
-            });
-        </script>
     </body>
 </html>
