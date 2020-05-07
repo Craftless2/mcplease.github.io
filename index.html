@@ -1,50 +1,19 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Tables</title>
-        <style>
-            body {
-                margin: 0;
-            }
-            table {
-                border-collapse: collapse;
-                font-family: sans-serif;
-            }
-            th, td {
-                border: 1px solid black;
-                padding: 10px;
-            }
-            div.table-thing {
-                margin-top: 10px;
-                text-align: center;
-            }
-            table tbody tr.Science {
-                background-color: lightblue;
-            }
-            table tbody tr.Geography {
-                background-color: lightgreen;
-            }
-            table tbody tr.Math {
-                background-color: lightgray;
-            }
-            table tbody tr.Chinese {
-                background-color: lightpink;
-            }
-            table tbody tr.English {
-                background-color: lightyellow;
-            }
-            table tbody tr.Lit {
-                background-color: Lavender;
-            }
-        </style>
-        <style>
-            #header {
-                background-color: #333;
-                overflow: hidden;
-            }
-            #header a {
-                float: left;
+     <head>
+         <meta charset="utf-8">
+         <title>Proposal</title>
+         <style>        
+            p {
+                 font-size: 1.5em;    
+             body {
+                 margin: 0;
+             } 
+             #header {
+                 background-color: #333;
+                 overflow: hidden;
+             }
+             #header a {
+                 float: left;
                 color: #f2f2f2;
                 text-align: center;
                 padding: 14px 16px;
@@ -56,124 +25,191 @@
                 background-color: #ddd;
                 color: black;
             }
-
             
             #header a#active {
-                background-color: green;
-                color: black;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header">
-            <a href="https://mcplease.github.io">Home</a>
-            <a href="https://mcplease.github.io/proposal">Proposal</a>
-            <a href="https://mcplease.github.io/music">Test</a>
-            <a href="https://mcplease.github.io/secondMusic">Test2</a>
-            <a href="https://mcplease.github.io/table" id="active">Table</a>
-        </div>
-        <div class="table-thing">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name of Homework</th>
-                        <th>Due date</th>
-                        <th>Done?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="Geography">
-                        <td>Geography CD5 DRQ Questions</td>
-                        <td>9/5 by 23:59</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr class="Geography">
-                        <td>Geography DRQ Formative</td>
-                        <td>18/5</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Extra Practice_Atoms, Molecules and Ions</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Extra Practice_Particulate Nature of Matter</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Extra Practice_Separation Techniques</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Extra Practice_Chemical Composition</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Extra Practice_Formula Writing</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Science">
-                        <td>Ex 7.4</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Math">
-                        <td>Y1RP_WS01_Algebraic Expansion and Factorisation</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Math">
-                        <td>Y1RP_WS02_Linear and Algebraic Fractional Equations</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Math">
-                        <td>heymath.com</td>
-                        <td>End of school hols</td>
-                        <td>Partially</td>
-                    </tr>
-                    <tr class="Chinese">
-                        <td>2020 1HCL 年中假期作业通知 1F 1I 1L</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Chinese">
-                        <td>《鹰的天空》征文（二） （中一）</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Chinese">
-                        <td>2020 1HCL 年中假期作业_《我家也是联合国》续写_Template</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Chinese">
-                        <td>1J 郭振光 我家也是联合国新故事</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="English">
-                        <td>Worksheet 5b</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="English">
-                        <td>Frankenstein Worksheet</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                    <tr class="Lit">
-                        <td>Mood Board</td>
-                        <td>End of school hols</td>
-                        <td>No</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </body>
-</html>
+                 background-color: green;
+                 color: black;
+             }
+
+             * {box-sizing:border-box}
+
+             /* Slideshow container */
+             .slideshow-container {
+               max-width: 1000px;
+               position: relative;
+               margin: auto;
+             }
+
+             /* Hide the images by default */
+             .mySlides {
+               display: none;
+             }
+
+             /* Next & previous buttons */
+             .prev, .next {
+               cursor: pointer;
+               position: absolute;
+               top: 50%;
+               width: auto;
+               margin-top: -22px;
+               padding: 16px;
+               color: white;
+               font-weight: bold;
+               font-size: 18px;
+               transition: 0.6s ease;
+               border-radius: 0 3px 3px 0;
+               user-select: none;
+             }
+
+             /* Position the "next button" to the right */
+             .next {
+               right: 0;
+               border-radius: 3px 0 0 3px;
+             }
+
+             /* On hover, add a black background color with a little bit see-through */
+             .prev:hover, .next:hover {
+               background-color: rgba(0,0,0,0.8);
+             }
+
+             /* Caption text */
+             .text {
+               color: #f2f2f2;
+               font-size: 15px;
+               padding: 8px 12px;
+               position: absolute;
+               bottom: 8px;
+               width: 100%;
+               text-align: center;
+             }
+
+             /* Number text (1/3 etc) */
+             .numbertext {
+               color: #f2f2f2;
+               font-size: 12px;
+               padding: 8px 12px;
+               position: absolute;
+               top: 0;
+             }
+
+             /* The dots/bullets/indicators */
+             .dot {
+               cursor: pointer;
+               height: 15px;
+               width: 15px;
+               margin: 0 2px;
+               background-color: #bbb;
+               border-radius: 50%;
+               display: inline-block;
+               transition: background-color 0.6s ease;
+             }
+
+             .active, .dot:hover {
+               background-color: #717171;
+             }
+
+             /* Fading animation */
+             .fade {
+               -webkit-animation-name: fade;
+               -webkit-animation-duration: 1.5s;
+               animation-name: fade;
+               animation-duration: 1.5s;
+             }
+
+             @-webkit-keyframes fade {
+               from {opacity: .4} 
+               to {opacity: 1}
+             }
+
+             @keyframes fade {
+               from {opacity: .4} 
+               to {opacity: 1}
+             }
+             img {
+               overflow: auto;   
+             }
+         </style>
+     </head>
+     <body>
+         <div id="header">
+             <a href="https://mcplease.github.io" id="active">Home</a>
+             <a href="https://mcplease.github.io/proposal">Proposal</a>
+             <a href="https://mcplease.github.io/music">Test</a>
+             <a href="https://mcplease.github.io/secondMusic">Test2</a>
+             <a href="https://mcplease.github.io/table">Table</a>
+
+
+</div>
+
+         <h1>Please consider the proposals</h1>
+         <p>Mum, when you are done looking through the <a href="#slideshow">sideshow</a> below this text about delicious ice creams, you may click proposals in the top-navigation bar (header)</p>
+         <!-- Slideshow container -->
+             <div class="slideshow-container">
+
+               <!-- Full-width images with number and caption text -->
+               <div class="mySlides fade">
+                   <div class="numbertext">1 / 3</div>
+                 <img src="https://www.wowamazing.com/wp-content/uploads/2015/08/13-of-the-Most-Amazing-and-Most-Delicious-Ice-Creams-...Yummy_.jpg" width=100% alt="rainbow-coloured ice cream">
+                 <div class="text">Delicious rainbow ice cream</div>
+               </div>
+
+               <div class="mySlides fade">
+                 <div class="numbertext">2 / 3</div>
+                 <img src="https://data2.1freewallpapers.com/download/ice-cream-delicious-dessert-2400x1350.jpg" width=100% alt="Ice creams">
+                 <div class="text">Wow! Such mouth-watering ice cream!</div>
+               </div>
+
+               <div class="mySlides fade">
+                 <div class="numbertext">3 / 3</div>
+                 <img src="https://assets.bonappetit.com/photos/57bf2308a184a3c9209db220/16:9/w_2560%2Cc_limit/vegan-ice-cream-group-shot.jpg" width=100% alt="a lot of ice creams">
+                 <div class="text">So many ice creams!</div>
+               </div>
+
+               <!-- Next and previous buttons -->
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+             <br>
+
+             <!-- The dots/circles -->
+             <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+               <span class="dot" onclick="currentSlide(2)"></span> 
+               <span class="dot" onclick="currentSlide(3)"></span> 
+             </div>
+
+             <script>
+                 var slideIndex = 1;
+                 showSlides(slideIndex);
+
+                 // Next/previous controls
+                 function plusSlides(n) {
+                   showSlides(slideIndex += n);
+                 }
+
+                 // Thumbnail image controls
+                 function currentSlide(n) {
+                   showSlides(slideIndex = n);
+                 }
+
+                 function showSlides(n) {
+                   var i;
+                   var slides = document.getElementsByClassName("mySlides");
+                   var dots = document.getElementsByClassName("dot");
+                   if (n > slides.length) {slideIndex = 1} 
+                   if (n < 1) {slideIndex = slides.length}
+                   for (i = 0; i < slides.length; i++) {
+                       slides[i].style.display = "none"; 
+                   }
+                   for (i = 0; i < dots.length; i++) {
+                       dots[i].className = dots[i].className.replace(" active", "");
+                   }
+                   slides[slideIndex-1].style.display = "block"; 
+                   dots[slideIndex-1].className += " active";
+                 }
+             </script>
+             <script>
+
+             </script>
+     </body>
+ </html>
