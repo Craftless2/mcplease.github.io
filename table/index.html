@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tables</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            table {
+                border-collapse: collapse;
+                font-family: sans-serif;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            table tbody tr.Science {
+                background-color: lightblue;
+            }
+            table tbody tr.Geography {
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-thing">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name of Homework</th>
+                        <th>Due date</th>
+                        <th>Done?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Geography">
+                        <td>Geography CD5 DRQ Questions</td>
+                        <td>9/5 by 23:59</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr class="Geography">
+                        <td>Geography DRQ Formative</td>
+                        <td>18/5</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="Science">
+                        <td>Extra Practice_Atoms, Molecules and Ions</td>
+                    </tr>
+                    <tr class="Science">
+                        <td>Extra Practice_Particulate Nature of Matter</td>
+                    </tr>
+                    <tr class="Science">
+                        <td>Extra Practice_Separation Techniques</td>
+                    </tr>
+                    <tr class="Science">
+                        <td>Extra Practice_Chemical Composition</td>
+                    </tr>
+                    <tr class="Science">
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="checkbox-container">
+            <div>
+                <label for="option1">Option 1</label>
+                <input type="checkbox" id="option1">
+            </div>
+            <div>
+                <label for="option2">Option 2</label>
+                <input type="checkbox" id="option2">
+            </div>
+            <div>
+                <label for="option3">Option 3</label>
+                <input type="checkbox" id="option3">
+            </div>
+            
+            <button>Check All</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script> 
+            $("#checkbox-container :checkbox").on("change", function(){
+              alert("The checkbox with the ID '" + this.id + "' changed");
+            });
+            
+            var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
+            var $checkboxes = $("#checkbox-container :checkbox");
+                
+            $checkboxes.on("change", function(){
+              $checkboxes.each(function(){
+                checkboxValues[this.id] = this.checked;
+              });
+              localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+            });
+            var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues');
+            if (checkboxValues === null){
+              checkboxValues = {};
+            }
+            $.each(checkboxValues, function(key, value) {
+                $("#" + key).prop('checked', value);
+            });
+        </script>
+    </body>
+</html>
