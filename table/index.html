@@ -284,6 +284,19 @@
             var activeEl = document.getElementById("active");
             activeEl.onmousemove = doSomething;
             activeEl.onmouseout = remove;
+            
+            
+            var tdEl = document.getElementsByTagName("td");
+            function enlarger() {
+                tdEl.style.fontSize = '1.3em';
+                tdEl.style.color = 'red';
+            }
+            function unenlarger() {
+                tdEl.style.fontSize = '1em';
+                tdEl.style.color = 'red';
+            }
+            tdEl.onmouseover = enlarger;
+            tdEl.onmouseout = unenlarger;
         </script>
     </body>
 </html>
