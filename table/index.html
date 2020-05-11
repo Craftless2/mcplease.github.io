@@ -124,7 +124,7 @@
                         <tr class="Science">
                             <td>Extra Practice_Separation Techniques</td>
                             <td>End of school hols</td>
-                            <td>No</td>
+                            <td>Yes</td>
                             <td>No</td>
                         </tr>
                         <tr class="Science">
@@ -241,11 +241,21 @@
                 </table>
             </div>
         </div>
+        <div id="tooltip">
+            <p>Table</p>
+        </div>
         <script>
             var bodyEl = document.getElementById("html-thing");
             bodyEl.addEventListener("click", function() {
                 alert("Pls let me play mc");
             })
+            var tooltipEl = document.getElementById("tooltip");
+            var activeEl = document.getElementById("active");
+            activeEl.addEventListener("mouseover", function() {
+                tooltipEl.style.display = 'block';
+                tooltipEl.style.top = window.clientY;
+                tooltipEl.style.left = window.clientX;
+            });
         </script>
     </body>
 </html>
