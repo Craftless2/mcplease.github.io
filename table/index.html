@@ -268,7 +268,14 @@
                 tooltipEl.style.left = e.clientX + "px";
             }
             var activeEl = document.getElementById("active");
-            activeEl.addEventListener("mouseover", doSomething);
+            activeEl.addEventListener("mouseover", function() {
+                var e = event || window.event;
+                
+                var tooltipEl = document.getElementById("tooltip");
+                tooltipEl.style.display = 'block';
+                tooltipEl.style.top = e.clientY + "px";
+                tooltipEl.style.left = e.clientX + "px";    
+            });
         </script>
     </body>
 </html>
