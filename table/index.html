@@ -245,6 +245,7 @@
             <p>Table</p>
         </div>
         <script>
+            /*
             var bodyEl = document.getElementById("html-thing");
             bodyEl.addEventListener("click", function() {
                 alert("Pls let me play mc");
@@ -257,6 +258,17 @@
                 tooltipEl.style.left = window.event.clientX;
                 alert("It works");
             });
+            */
+            function doSomething(event) {
+                var e = event || window.event;
+                
+                var tooltipEl = document.getElementById("tooltip");
+                tooltipEl.style.display = 'block';
+                tooltipEl.style.top = e.clientY + "px";
+                tooltipEl.style.left = e.clientX + "px";
+            }
+            var activeEl = document.getElementById("active");
+            activeEl.addEventListener("mouseover", doSomething);
         </script>
     </body>
 </html>
