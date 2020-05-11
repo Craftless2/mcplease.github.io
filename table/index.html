@@ -274,8 +274,15 @@
                 tooltipEl.style.top = e.clientY + 10 + "px";
                 tooltipEl.style.left = e.clientX + 10 + "px";
             }
+            function remove(event) {
+                var e = event || window.event;
+                
+                var tooltipEl = document.getElementById("tooltip");
+                tooltipEl.style.display = 'none';
+            }
             var activeEl = document.getElementById("active");
             activeEl.onmousemove = doSomething;
+            activeEl.onmouseout = 
         </script>
     </body>
 </html>
