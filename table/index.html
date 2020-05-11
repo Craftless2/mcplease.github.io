@@ -80,6 +80,7 @@
             div#tooltip {
                 display: none;
                 position: absolute;
+                background-color: red;
             }
         </style>
     </head>
@@ -270,8 +271,8 @@
                 
                 var tooltipEl = document.getElementById("tooltip");
                 tooltipEl.style.display = 'block';
-                tooltipEl.style.top = e.clientY + "px";
-                tooltipEl.style.left = e.clientX + "px";
+                tooltipEl.style.top = e.clientY + 10 + "px";
+                tooltipEl.style.left = e.clientX + 10 + "px";
             }
             var activeEl = document.getElementById("active");
             activeEl.onmousemove = doSomething;
