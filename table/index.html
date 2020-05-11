@@ -251,11 +251,11 @@
             })
             var tooltipEl = document.getElementById("tooltip");
             var activeEl = document.getElementById("active");
-            activeEl.addEventListener("mouseover", function() {
+            activeEl.addEventListener("mouseover", function(event) {
                 tooltipEl.style.display = 'block';
                 tooltipEl.style.top = window.event.clientY;
                 tooltipEl.style.left = window.event.clientX;
-                this.style.color = 'red';
+                alert("It works");
             });
         </script>
     </body>
