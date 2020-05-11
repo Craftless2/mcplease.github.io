@@ -167,8 +167,8 @@
                         <tr class="Math">
                             <td>heymath.com</td>
                             <td>End of school hols</td>
-                            <td>Partially</td>
-                            <td>Partially</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
                         </tr>
                         <tr class="Chinese">
                             <td>2020 1HCL 年中假期作业通知 1F 1I 1L</td>
@@ -266,7 +266,7 @@
                 alert("It works");
             });
             */
-            /*
+            
             function doSomething(event) {
                 var e = event || window.event;
                 
@@ -277,16 +277,7 @@
             }
             var activeEl = document.getElementById("active");
             activeEl.onmousemove = doSomething;
-            */
-            var activeEl = document.getElementById("active");
-            activeEl.addEventListener("mousemove", function() {
-                var e = event || window.event;
-                
-                var tooltipEl = document.getElementById("tooltip");
-                tooltipEl.style.display = 'block';
-                tooltipEl.style.top = e.clientY + 10 + "px";
-                tooltipEl.style.left = e.clientX + 10 + "px";    
-            }
+            activeEl.onmouseout = remove;
         </script>
     </body>
 </html>
