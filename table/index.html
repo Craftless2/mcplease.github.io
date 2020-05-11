@@ -286,7 +286,7 @@
             activeEl.onmouseout = remove;
             
             
-            var tdEl = document.getElementById("sa");
+            var tdEl = document.querySelectorAll('tr')
             function enlarger() {
                 tdEl.style.fontSize = '1.3em';
                 tdEl.style.color = 'red';
@@ -298,7 +298,7 @@
             }
             tdEl.onmousemove = enlarger;
             tdEl.onmouseout = unenlarger;
-            alert("It works4");
+            alert("It works5");
         </script>
     </body>
 </html>
