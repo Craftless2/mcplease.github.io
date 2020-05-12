@@ -296,22 +296,22 @@
 
             function enlarger() {
                 for (i = 0; i < tdEl.length; i++) {
-                    tdEl.style.fontSize = '1.3em';
-                    tdEl.style.color = 'red';
+                    tdEl[i].style.fontSize = '1.3em';
+                    tdEl[i].style.color = 'red';
                     alert("enlarger");
                 }
             }
             function unenlarger() {
                 for (i = 0; i < tdEl.length; i++) {
-                    tdEl.style.fontSize = '1em';
-                    tdEl.style.color = 'red';
+                    tdEl[i].style.fontSize = '1em';
+                    tdEl[i].style.color = 'red';
                 }
             }
             for (i = 0; i < tdEl.length; i++) {
-                tdEl.onmousemove = enlarger;
-                tdEl.onmouseout = unenlarger;
+                tdEl[i].onmousemove = enlarger;
+                tdEl[i].onmouseout = unenlarger;
             }
-            alert("It works5");
+            alert("It works6");
         </script>
     </body>
 </html>
