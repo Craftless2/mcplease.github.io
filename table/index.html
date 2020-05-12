@@ -82,6 +82,9 @@
                 position: absolute;
                 background-color: red;
             }
+            td:hover {
+                font-size: 1.2em;    
+            }
         </style>
     </head>
     <body id="body-id">
@@ -291,7 +294,7 @@
             var activeEl = document.getElementById("active");
             activeEl.onmousemove = doSomething;
             activeEl.onmouseout = remove;
-            
+            /*
             var counter = 0;
             var tdEl = document.getElementsByTagName('td');
             var oaragraphEl = document.getElementById('oaragraph');
@@ -312,8 +315,8 @@
             for (i = 0; i < tdEl.length; i++) {
                 tdEl[i].onmousemove = enlarger;
                 tdEl[i].onmouseout = unenlarger;
-            }
-            alert("It works7");
+            }*/
+            alert("It works");
         </script>
     </body>
 </html>
