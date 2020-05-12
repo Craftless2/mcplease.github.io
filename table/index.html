@@ -362,15 +362,16 @@
             });
             var paraEl = document.getElementById("paragraph");
             paraEl.addEventListener("click", function() {
-                for (var i = 0; i < message.length; i++) {
-                    var qn = 0;
-                    var mathQn = prompt(message[qn]);
-                }
                 var message = [
                     "1+1",
                     "2+2",
                     "3+3"
                 ];
+                for (var i = 0; i < message.length; i++) {
+                    var qn = 0;
+                    var mathQn = prompt(message[qn]);
+                }
+                
                 if (qn === 1 && mathQn === "2") {
                     prompt("Wrong");
                     qn++;
