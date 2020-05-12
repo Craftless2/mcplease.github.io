@@ -329,7 +329,7 @@
             var oaragraphEl = document.getElementById('oaragraph');
             var rickrollEl = document.getElementById("rickroll");
             oaragraphEl.addEventListener("click", function() {
-                var prompted = prompt("Who are you?", "Type here");    
+                var prompted = prompt("Who are you?");    
             
             //if (prompted.value === "Mum" || "mum" || "Mom" || "mom") {
                     
@@ -351,6 +351,8 @@
                     alert ("Hello, welcome back");
                     rickrollEl.style.display = 'none';
                     break;
+                case null:
+                    alert("Type something in next time");
                 default:
                     alert("You are not authorised");
             }
