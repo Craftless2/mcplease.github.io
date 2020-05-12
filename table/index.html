@@ -265,6 +265,7 @@
             <p>Table</p>
         </div>
         <p id="oaragraph">HI</p>
+        <p id="paragraph">Math Quiz</p>
         <div id="rickroll">
             <iframe width="50" height="50" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=0&loop=1&playlist=dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -358,6 +359,27 @@
                 default:
                     alert("You are not authorised");
             }
+            });
+            var paraEl = document.getElementById("paragraph");
+            paraEl.addEventListener("click", function() {
+                for (var i = 0; i < messages.length; i++) {
+                    var qn = 0;
+                    var mathQn = prompt(message[qn]);
+                }
+                var message = [
+                    "1+1",
+                    "2+2",
+                    "3+3"
+                ];
+                if (qn === 1 && mathQn === "2") {
+                    prompt("Wrong");
+                    qn++;
+                }
+                else {
+                    alert("Wrong");
+                    
+                }
+                
             });
         </script>
     </body>
