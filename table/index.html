@@ -370,7 +370,7 @@
                 
                 var qn = 0;
                 for (var i = 0; i < message.length; ++i) {
-                    var mathQn = prompt("Qn " + (qn + 1) + "of" + message.length + ": " + message[qn]);
+                    var mathQn = prompt("Qn " + (qn + 1) + " of " + message.length + ": " + message[qn]);
                 
                     if ((qn === 0 && mathQn === "2") || (qn === 1 && mathQn === "4") || (qn === 2 && mathQn === "6")) {
                         alert("Correct");
@@ -382,14 +382,14 @@
                     }
                     
                 }
-                if (qn === (message.length + 1)) {
+                if (qn === (message.length)) {
                     alert("Great job, you got all correct!");    
                 }
-                else if (qn === message.length) {
+                else if (qn === message.length - 1) {
                     alert("Good try. One wrong.");         
                 }
                 else {
-                    alert("You can do better than that. Score: " + (qn - 1) + " out of " + message.length + " questions.");            
+                    alert("You can do better than that. Score: " + qn + " out of " + message.length + " questions.");            
                 }
                 
             });
