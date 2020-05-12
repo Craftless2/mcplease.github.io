@@ -257,6 +257,7 @@
         <div id="tooltip">
             <p>Table</p>
         </div>
+        <p id="oaragraph"></p>
         <script>
             /*
             var bodyEl = document.getElementById("html-thing");
@@ -291,14 +292,15 @@
             activeEl.onmousemove = doSomething;
             activeEl.onmouseout = remove;
             
-            
+            var counter = 0;
             var tdEl = document.getElementsByTagName('td');
-
+            var oaragraphEl = document.getElementById('oaragraph');
             function enlarger() {
                 for (i = 0; i < tdEl.length; i++) {
                     tdEl[i].style.fontSize = '1.3em';
                     tdEl[i].style.color = 'red';
-                    alert("enlarger");
+                    counter++;
+                    oaragraphEl.innerHTML = counter;
                 }
             }
             function unenlarger() {
