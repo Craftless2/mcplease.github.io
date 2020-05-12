@@ -370,14 +370,11 @@
                 
                 var qn = 0;
                 for (var i = 0; i < message.length; ++i) {
-                    var mathQn = prompt("Qn " + (qn + 1) + ": " + message[qn]);
+                    var mathQn = prompt("Qn " + (qn + 1) + "of" + message.length + ": " + message[qn]);
                 
                     if ((qn === 0 && mathQn === "2") || (qn === 1 && mathQn === "4") || (qn === 2 && mathQn === "6")) {
                         alert("Correct");
                         qn++;
-                    }
-                    else if (qn === 4) {
-                        alert("Got all right! Such a genius");    
                     }
                     else {
                         alert("Wrong, try again. You wasted a try.");
@@ -385,7 +382,15 @@
                     }
                     
                 }
-                
+                if (qn === (message.length + 1)) {
+                    alert("Great job, you got all correct!");    
+                }
+                else if (qn === (message.length) {
+                    alert("Good try. One wrong.");         
+                }
+                else {
+                    alert("You can do better than that. Score: " + (qn - 1) + " out of " + message.length + " questions.");            
+                }
                 
             });
         </script>
