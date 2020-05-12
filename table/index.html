@@ -369,8 +369,8 @@
                 ];
                 
                 var qn = 0;
-                for (var i = 0; i < message.length; i++) {
-                    var mathQn = prompt(message[qn]);
+                for (var i = 0; i < message.length; ++i) {
+                    var mathQn = prompt("Qn " + (qn + 1) + ": " + message[qn]);
                 
                     if ((qn === 0 && mathQn === "2") || (qn === 1 && mathQn === "4") || (qn === 2 && mathQn === "6")) {
                         alert("Correct");
