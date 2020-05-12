@@ -367,12 +367,13 @@
                     "2+2",
                     "3+3"
                 ];
+                
+                var qn = 0;
                 for (var i = 0; i < message.length; i++) {
-                    var qn = 0;
                     var mathQn = prompt(message[qn]);
                 
                     if (qn === 0 && mathQn === "2") {
-                        prompt("Wrong");
+                        alert("Correct");
                         qn++;
                     }
                     else {
