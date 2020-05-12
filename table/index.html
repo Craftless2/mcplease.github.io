@@ -323,7 +323,7 @@
         <script>
             var oaragraphEl = document.getElementById('oaragraph');
             oaragraphEl.addEventListener("click", function() {
-                var prompted = prompt("Who are you");    
+                var prompted = prompt("Who are you?", "Type here");    
             
             //if (prompted.value === "Mum" || "mum" || "Mom" || "mom") {
                     
@@ -334,6 +334,8 @@
                 case "Mom":
                 case "mom":
                 case "angie":
+                case "Angie":
+                case "Angie":
                     alert ("Hi, " + prompted + " thanks for letting me play mc");
                     break;
                 case "Javier":
@@ -342,7 +344,8 @@
                     alert ("Hello, welcome back");
                     break;
                 default:
-                    alert("You are not authorised");
+                    alert("You are not authorised, so here's a rickroll");
+
             }
             });
         </script>
