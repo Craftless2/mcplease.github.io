@@ -86,6 +86,9 @@
                 font-size: 1.2em;    
                 color: red;
             }
+            #rickroll {
+                display: none;
+            }
         </style>
     </head>
     <body id="body-id">
@@ -262,7 +265,9 @@
             <p>Table</p>
         </div>
         <p id="oaragraph">HI</p>
-        
+        <div id="rickroll">
+            <iframe width="50" height="50" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0&loop=1&playlist=dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <script>
             /*
             var bodyEl = document.getElementById("html-thing");
@@ -322,6 +327,7 @@
         </script>
         <script>
             var oaragraphEl = document.getElementById('oaragraph');
+            var rickrollEl = document.getElementById("rickroll");
             oaragraphEl.addEventListener("click", function() {
                 var prompted = prompt("Who are you?", "Type here");    
             
@@ -344,8 +350,8 @@
                     alert ("Hello, welcome back");
                     break;
                 default:
-                    alert("You are not authorised, so here's a rickroll");
-
+                    alert("You are not authorised");
+                    rickrollEl.style.display = 'block';
             }
             });
         </script>
