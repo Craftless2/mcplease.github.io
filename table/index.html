@@ -262,6 +262,7 @@
             <p>Table</p>
         </div>
         <p id="oaragraph"></p>
+        
         <script>
             /*
             var bodyEl = document.getElementById("html-thing");
@@ -318,6 +319,30 @@
                 tdEl[i].onmouseout = unenlarger;
             }*/
             alert("It works");
+        </script>
+        <script>
+            var oaragraphEl = document.getElementById('oaragraph');
+            oaragraphEl.addEvenListener("click", function() {
+                var prompted = prompt("Who are you");    
+            }
+            if (prompted.value === "Mum" || "mum" || "Mom" || "mom") {
+                    
+            }
+            switch(prompted.value) {
+                case "Mum":
+                case "mum":
+                case "Mom":
+                case "mom":
+                    alert ("Hi, " + prompted.value + " thanks for letting me play mc");
+                    break;
+                case "Javier":
+                case "javier":
+                case "someguy":
+                    alert ("Hello, welcome back");
+                    break;
+                default:
+                    alert("You are not authorised");
+            }
         </script>
     </body>
 </html>
