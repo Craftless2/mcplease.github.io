@@ -292,18 +292,25 @@
             activeEl.onmouseout = remove;
             
             
-            var tdEl = document.querySelectorAll('tr');
+            var tdEl = document.getElementsByTagName('tr');
+
             function enlarger() {
-                tdEl.style.fontSize = '1.3em';
-                tdEl.style.color = 'red';
-                alert("enlarger");
+                for (i = 0; i < tdEl.length; i++) {
+                    tdEl.style.fontSize = '1.3em';
+                    tdEl.style.color = 'red';
+                    alert("enlarger");
+                }
             }
             function unenlarger() {
-                tdEl.style.fontSize = '1em';
-                tdEl.style.color = 'red';
+                for (i = 0; i < tdEl.length; i++) {
+                    tdEl.style.fontSize = '1em';
+                    tdEl.style.color = 'red';
+                }
             }
-            tdEl.onmousemove = enlarger;
-            tdEl.onmouseout = unenlarger;
+            for (i = 0; i < tdEl.length; i++) {
+                tdEl.onmousemove = enlarger;
+                tdEl.onmouseout = unenlarger;
+            }
             alert("It works5");
         </script>
     </body>
