@@ -91,6 +91,19 @@
             }
         </style>
         <style>
+            div.wholeThing {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(255,255,255); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
             div.geoggg {/*
                 width: 80%;
                 margin: 5% auto 15% auto;
@@ -100,17 +113,14 @@
                 text-align: center;
                 overflow: auto;
                 display: none;*/
-                display: none; /* Hidden by default */
-                  position: fixed; /* Stay in place */
-                  z-index: 1; /* Sit on top */
-                  left: 0;
-                  top: 0;
-                  width: 100%; /* Full width */
-                  height: 100%; /* Full height */
-                  overflow: auto; /* Enable scroll if needed */
-                  background-color: rgb(255,255,255); /* Fallback color */
-                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                  padding-top: 60px;
+                
+
+                background-color: #fefefe;
+                margin: 5px auto; /* 15% from the top and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+
+
             }
         </style>
     </head>
@@ -290,8 +300,10 @@
         <p id="oaragraph">HI</p>
         <p id="paragraph">Math Quiz</p>
         <p id="paragrap">Geog thing</p>
+        <div class="wholeThing">
         <div class="geoggg" id="geoggg">
             <p>Q1: The students should improve their data collection process by taking a few tests after 5 minutes of resting. <br>Q2: The day in which heavier traffic flow was reported was day 2. The students spaced out the traffic counting sessions. <br>Q3: The data could be represented in a bar graph. <br>Q4: It is to let them feel the experience of a traffic count.</p>
+        </div>
         </div>
         <script>
             /*
