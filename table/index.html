@@ -455,8 +455,15 @@
                 document.divTag.appendChild(pEL);*/
                 alert("clicked3");
             });
-            (!innerStuffEl).addEventListener("click", function() {
-                geogggEl.style.display = 'none';    
+            geogggEl.addEventListener("click", function(event) {
+                var target = event.target || window.event.target;
+                if (target === innerStuffEl) {
+                    return;
+                }
+                
+                else {
+                    geogggEl.style.display = 'none';    
+                }
             });
         </script>
     </body>
