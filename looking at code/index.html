@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>New webpage</title>
+    </head>
+    <body>
+        <div id="player"></div>
+
+        <script src="http://www.youtube.com/player_api"></script>
+
+        <script>
+
+            // create youtube player
+            var player;
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player('player', {
+                  height: '390',
+                  width: '640',
+                  videoId: '0Bmhjf0rKe8',
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                  }
+                });
+                player2 = new YT.Player('player', {
+                  height: '390',
+                  width: '640',
+                  videoId: '',
+                  events: {
+                    'onReady': onPlayer2Ready,
+                    'onStateChange': onPlayer2StateChange
+                  }
+                });
+            }
+
+            // autoplay video
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+
+            // when video ends
+            function onPlayerStateChange(event) {        
+                if(event.data === 0) {            
+                    function onPlayer2Ready(event) {
+                        event.target.playVideo():
+                    }
+                }
+            }
+
+        </script>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
