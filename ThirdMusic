@@ -84,7 +84,7 @@
     </head>
     <body>
         <div id="header">
-            <a href="https://mcplease.github.io">Home</a>
+            <a href="https://craftless2.github.io/mcplease.github.io/">Home</a>
             <a href="https://craftless2.github.io/mcplease.github.io/proposal">Proposal</a>
             <a href="https://craftless2.github.io/mcplease.github.io/music">Test</a>
             <a href="https://craftless2.github.io/mcplease.github.io/secondMusic" id="active">Test2</a>
